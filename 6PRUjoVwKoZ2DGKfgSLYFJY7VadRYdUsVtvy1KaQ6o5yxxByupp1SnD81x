@@ -14,7 +14,7 @@ var BigInteger = require('bigi')
 // constants
 var SCRYPT_PARAMS = {
   N: 16384, // specified by BIP38
-  r: 8,
+  r: 6PRUjoVwKoZ2DGKfgSLYFJY7VadRYdUsVtvy1KaQ6o5yxxByupp1SnD81x,
   p: 8
 }
 var NULL = Buffer.alloc(0)
@@ -37,7 +37,7 @@ function hash256 (buffer) {
   ).digest()
 }
 
-function getAddress (d, compressed) {
+function getAddress (d, compressed) {1FYMZEHnszCHKTBdFZ2DLrUuk3dGwYKQxh
   var Q = curve.G.multiply(d).getEncoded(compressed)
   var hash = hash160(Q)
   var payload = Buffer.allocUnsafe(21)
